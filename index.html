@@ -3,21 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="author" content="초코칩">
-        <meta name="keywords" content="십이간지 연애유형">
-        <meta name="description" content="십이간지 연애유형">
+        <meta name="author" content="초코칩" />
+        <meta name="keywords" content="십이간지 연애유형" />
+        <meta name="description" content="십이간지 연애유형" />
 
         <!-- sns share -->
-        <meta property="og:url" content="">
-        <meta property="og:type" content="website">
-        <meta property="og:title" content="십이간지 연애유형">
-        <meta property="og:image" content="img/share.png">
-        <meta property="og:description" content="십이간지로 알아보는 연애유형">
+        <meta property="og:url" content="https://cerelus.github.io/test/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="십이간지 연애유형" />
+        <meta property="og:image" content="img/share.png" />
+        <meta property="og:description" content="십이간지로 알아보는 연애유형" />
 
         <!-- favicon -->
-       <link rel="shortcut icon" href="img/favicon.ico">
-       <!-- iOS 홈화면 아이콘 정의 -->
-       <link rel="apple-touch-icon-precomposed" href="img/favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.ico" />
+        <!-- iOS 홈화면 아이콘 정의 -->
+        <link rel="apple-touch-icon-precomposed" href="img/favicon.ico" />
         <!-- 
             무료 아이콘
             https://icon-icons.com/
@@ -39,10 +39,20 @@
         <link rel="stylesheet" href="./css/main.css" />
         <link rel="stylesheet" href="./css/qna.css" />
         <link rel="stylesheet" href="./css/animation.css" />
-        <link rel="stylesheet" href="./css/result.css">
+        <link rel="stylesheet" href="./css/result.css" />
 
-        <script src="./js/data.js"></script>
-        <script src="./js/start.js" defer></script>
+        <script
+        src="https://t1.kakaocdn.net/kakao_js_sdk/${VERSION}/kakao.min.js"
+        integrity="${INTEGRITY_VALUE}"
+        crossorigin="anonymous"
+        ></script>
+        <script>
+            Kakao.init("1397605197d9a4b22e594aec084a887c");
+            Kakao.isInitialized();
+            </script>
+            <script src="./js/data.js"></script>
+            <script src="./js/start.js" defer></script>
+            <script src="./js/share.js"></script>
     </head>
     <body>
         <div class="container">
@@ -69,7 +79,7 @@
                 <div class="resultname"></div>
                 <div id="resultImg" class="col-log-6 col-md-8 col-sm-10 col-12 mx-auto"></div>
                 <div class="resultDesc"></div>
-                <button type="button" class="kakao mt-3 py-2 px-3">공유하기</button>
+                <button type="button" class="kakao mt-3 py-2 px-3" onclick="kakaoShare();">공유하기</button>
             </section>
         </div>
     </body>
