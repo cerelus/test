@@ -1,5 +1,4 @@
 function kakaoShare() {
-    console.log("동작");
     Kakao.Share.sendDefault({
         objectType: "feed",
         content: {
